@@ -1,0 +1,217 @@
+<html lang="en">
+    <head>
+        <title>IUOAUTOMATE-FINI</title>
+<link rel="icon" type="image/x-icon" href="Auto.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="app.css" />
+    </head>
+
+
+    <body>
+
+ 
+
+ <ul id="userprofile">
+    </ul>
+    
+   
+       <p id="demo"></p>
+ 
+
+
+        <div id="tools" >
+          <br/> <br/> <br/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <button id="grammar-view">Guide d'utilisation</button>
+          <button id="reset">Nettoyer Canevas</button>
+            <button id="export-image">Enregistrer Image</button>
+            <button id="test">Verifier Chaine</button>
+            <button id="minimizedfa">Minimiser AFD</button>
+            <!--<button id="convert2dfa">Convertir AFND en AFD</button>-->
+            <button id="convert2re">Langage Regulier</button>
+           
+          <!--  <button id="complement">complement</button>-->
+           
+            <div id="mode">
+                <button data-key="move" class="active">Bouger Etat</button>
+                <button data-key="design">Créer Automate</button>
+
+            </div>
+            
+        </div>
+
+
+
+        <div id="grammar">
+            <div id="grammar-close">×</div>
+          
+            <div id="grammar-content">
+               
+                    <div id="grammar-source">
+                   
+              
+               
+                   
+                    <div id="grammar-result">
+                        Guide d'utilisation de l'IUOAUTOMATE-FINI
+                    </div>
+
+                    <div id="grammar-result1">
+                       
+                       <br/>
+
+Activer le bouton <b>"Créer Automate"</b> pour créer les états et les transitions<br/>
+- Pour créer un état il suffit de faire un clic droit dans la zone blanche(Canevas). Puis cliquer sur créer nouveau état pour saisir le nom souhaité à cet état. Il faut répéter l’action pour créer tous les états de l’automate à créer.<br/><br/>
+- Pour créer une transition, il faut glisser depuis l’état source jusqu’à l’état de destination. Un message vous demandera de saisir le symbole de la transition. Il faut répéter l’action pour créer tous les états de l’automate à construire.<br/><br/>
+- Une fois l'état est créé, clic droit sur l'état, puis indiquer si l'état est final ou initial <br/><br/>
+
+Après la création de l’automate, vous pouvez effectuer des opérations.<br/><br/> 
+
+
+Activer le bouton <b>"Bouger Etat"</b>, puis cliquer/glisser sur un état pour le déplacer.<br/>
+- Cliquer sur <b>"Minimiser AFD"</b> pour minimiser l'Automate Fini créé.<br/>
+- Cliquer sur <b>"Langage Régulier"</b> pour trouver le code de l'Automate Fini créé.<br/>
+- Cliquer sur <b>"Vérifier Chaine"</b> pour vérifier si un mot appartient à l'Automate Fini créé.<br/>
+- Cliquer sur <b>"Enregistrer Image"</b> pour Capturer le Canevas.<br/>
+- Cliquer sur <b>"Nettoyer Canevas"</b> pour effacer l'Automate créé.<br/><br/>
+<b>Note :</b> <br/>Un seul état peut-être initial. Si vous avez choisi un état initial par erreur, vous pouvez le changer en faisant un clic droit sur l'état souhaité<br/>
+Quand vous effectuez un clic droit sur un état, Une fénêtre apparaitra. Vous pouvez renommer et supprimer l'état, renommer et supprimerune transition.
+                       
+
+                    </div>
+              </div>
+            </div>
+        </div>
+
+        
+                
+        <script src="js/utils.js"></script>
+        <script src="js/storage.js"></script>
+        <script src="js/custom-errors.js"></script>
+        <script src="js/custom-context-menu.js"></script>
+        <script src="js/modal.js"></script>
+
+        <script src="js/new-dfa-minimizer.js"></script>
+        <script src="js/grammar.js"></script>
+        <script src="js/cyk.js"></script>
+        <script src="js/turing-machine.js"></script>
+        <script src="js/dpda.js"></script>
+        <script src="js/machine-readable-regex-converter.js"></script>
+        <script src="js/dfa-complement.js"></script>
+        <script src="js/nfa-renderer.js"></script>
+        <script src="js/dfa-converter.js"></script>
+        <script src="js/re-converter.js"></script>
+        <script src="js/dfa-minimizer.js"></script>
+        <script src="js/finite-automata.js"></script>
+        <script src="js/state.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/cfg-converter.js"></script>
+
+          
+       
+<style>
+.mDiv {
+   position: absolute;
+    width: 100%;
+    height: 10%;
+    background:#84ADEA;
+    margin: auto;
+    left: 0px;
+bottom: 100%;
+top: 10%;
+
+}
+
+.mDivlogodwat{
+      width: 25%;
+    height: 66%;
+    background:#84ADEA;
+    float: right;
+   padding:2% ; 
+
+}
+
+.mDivlogogauch {
+  
+    width:66%;
+    height: 45%;
+    background:#84ADEA;
+    
+    float: left;
+   padding:2.5% ; 
+
+}
+
+
+
+.mDivlogo1 {
+  
+    width: 40%;
+    height: 100%;
+    background-image:url(Auto.png) ;
+    background-size:70% ;
+    background-repeat: no-repeat;
+    margin: auto;
+    
+
+}
+
+.mDivlogo2 {
+  
+    width: 40%;
+    height: 100%;
+    background-image:url(Auto1.png) ;
+    background-size:100% ;
+    background-repeat: no-repeat;
+    margin: auto;
+    
+
+}
+
+.mDiva {
+   position: absolute;
+    width: 100%;
+    height: 10%;
+     background:#84ADEA;
+    margin: auto;
+    left: 0px;
+bottom: 0%;
+top: 90%;
+
+}
+
+.mDivaanba {
+   
+    width: 40%;
+    height: 90%;
+    background-image:url(Auto2.png) ;
+    background-size:100% ;
+    background-repeat: no-repeat;
+    margin: auto;
+    
+bottom: 20%;
+top: 0%;
+
+
+}
+
+
+
+</style>
+
+
+
+<div class="mDiv"> 
+
+<div class="mDivlogogauch">
+    <div class="mDivlogo2"></div>
+   </div>
+<div class="mDivlogodwat">
+    <div class="mDivlogo1"></div>
+
+</div>
+
+  
+</div>
+
+    </body>
+</html>
